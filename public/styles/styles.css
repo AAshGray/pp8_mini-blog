@@ -1,5 +1,8 @@
 html{
 
+padding: 0px;
+margin: 0px;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -17,6 +20,8 @@ fieldset {
 
 button{
     background-color: green;
+
+    width: 170px;
 }
 
 label >textarea{
@@ -24,4 +29,5 @@ label >textarea{
 display:flex;
 flex-direction: column;
 
+width: 170px;
 }
