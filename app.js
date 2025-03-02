@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
-app.get('/entries', (req, res) => {
+app.get('/entries', async (req, res) => {
     const conn = await connect();
 
     const entries = await conn.query('SELECT * FROM posts ORDER BY created_at DESC');
