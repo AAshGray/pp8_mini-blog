@@ -7,7 +7,7 @@ margin: 0px;
     flex-direction: row;
     justify-content: center;
 
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(199, 199, 199);
 
 }
 
@@ -31,6 +31,7 @@ button{
     justify-content: center;
 
     padding:5px;
+    border-radius: 5px;
 }
 
 button:hover{
@@ -49,6 +50,7 @@ width: 500px;
 margin:10px;
 
 border-width: 2px;
+border-radius: 5px;
 }
 
 
@@ -61,6 +63,13 @@ justify-content: center;
     width: 700px;
     padding: 40px;
     margin:20px;
+
+    
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(92, 92, 92, 0.697);
+
 }
 
 form > h1{
