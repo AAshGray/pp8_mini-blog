@@ -16,6 +16,8 @@ fieldset {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    border: none;
 }
 
 button{
@@ -28,6 +30,7 @@ button{
     flex-direction: row;
     justify-content: center;
 
+    padding:5px;
 }
 
 button:hover{
@@ -66,4 +69,6 @@ form > h1{
     align-items: center;
     
     padding: 20px;
+
+    font-family: sans-serif;
     }
