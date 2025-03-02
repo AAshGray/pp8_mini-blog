@@ -34,7 +34,7 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.render('home');
-})
+});
 
 app.get('/entries', async (req, res) => {
     const conn = await connect();
@@ -44,7 +44,7 @@ app.get('/entries', async (req, res) => {
     console.log(entries);
 
     res.render('entries', {entries});
-})
+});
 
 app.post('/submit', async (req, res) => {
     const newPost = {
