@@ -9,4 +9,3 @@ create table posts(
     content varchar(255),
     created_at datetime default now()
 );
-
