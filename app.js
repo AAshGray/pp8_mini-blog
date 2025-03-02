@@ -36,6 +36,16 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
+app.get('/entries', (req, res) => {
+    const conn = await connect();
+
+    const entries = await conn.query('SELECT * FROM posts ORDER BY created_at DESC');
+
+    console.log(entries);
+
+    res.render('entries', {entries});
+})
+
 app.post('/submit', async (req, res) => {
     const newPost = {
         author: req.body.author,
