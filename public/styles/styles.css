@@ -8,7 +8,7 @@ html{
 
 }
 
-fieldset{
+fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,4 +17,11 @@ fieldset{
 
 button{
     background-color: green;
+}
+
+label >textarea{
+
+display:flex;
+flex-direction: column;
+
 }

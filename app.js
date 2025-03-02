@@ -33,12 +33,9 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.render('home')
-});
+    res.render('home');
+})
 
-<<<<<<< HEAD
-app.post('/submit', (req, res) => {
-=======
 app.get('/entries', async (req, res) => {
     const conn = await connect();
 
@@ -50,7 +47,6 @@ app.get('/entries', async (req, res) => {
 })
 
 app.post('/submit', async (req, res) => {
->>>>>>> b0c2c39f08638a41c6277fe0c9244bbff305b276
     const newPost = {
         author: req.body.author,
         title: req.body.title,
