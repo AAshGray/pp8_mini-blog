@@ -96,3 +96,8 @@ background-color: white;
 a {
     color: green;
   }
+
+.err {
+    color: darkred;
+    display: none;
+}
