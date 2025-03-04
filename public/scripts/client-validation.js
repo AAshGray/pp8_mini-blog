@@ -10,6 +10,15 @@ function validate() {
         document.getElementById("err-author").style.display = "block";
         isValid = false;
     }
+
+    let title = document.getElementById('title').value.trim();
+    if (title === "") {
+        document.getElementById("err-title").style.display = "block";
+        isValid = false;
+    }
+
+    
+
     return isValid;
 }
 
