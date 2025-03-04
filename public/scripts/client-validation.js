@@ -6,7 +6,7 @@ function validate() {
     let isValid = true;
 
     let author = document.getElementById('author').value.trim();
-    if (author === ""){
+    if (author === "" || /\d/.test(author)) {
         document.getElementById("err-author").style.display = "block";
         isValid = false;
     }
